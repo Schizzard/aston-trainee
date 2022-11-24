@@ -79,14 +79,14 @@ class AbstractProductB(ABC):
     одной и той же конкретной вариации.
     """
     @abstractmethod
-    def useful_function_b(self) -> None:
+    def useful_function_b(self) -> str:
         """
         Продукт B способен работать самостоятельно...
         """
         pass
 
     @abstractmethod
-    def another_useful_function_b(self, collaborator: AbstractProductA) -> None:
+    def another_useful_function_b(self, collaborator: AbstractProductA) -> str:
         """
         ...а также взаимодействовать с Продуктами A той же вариации.
 
